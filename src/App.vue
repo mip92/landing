@@ -1,17 +1,20 @@
 <template>
-  <my-navbar></my-navbar>
-  <my-content></my-content>
-<my-slider></my-slider>
+  <div class="background">
+    <my-navbar></my-navbar>
+    <my-content1></my-content1>
+    <my-content2></my-content2>
+  </div>
 </template>
 
 <script>
 import MyNavbar from "@/components/MyNavbar";
 import MyButton from "@/components/UI/MyButton";
 import '@/style/style.scss'
-import MyContent from "@/components/MyContent";
-import MySlider from "@/components/UI/MySlider";
+import MyContent1 from "@/components/MyContent1";
+import MyContent2 from "@/components/MyContent2";
+
 export default {
-  components:{MySlider, MyContent, MyButton, MyNavbar}
+  components: {MyContent1, MyContent2, MyButton, MyNavbar}
 }
 </script>
 <style lang="scss">
@@ -21,9 +24,11 @@ export default {
   padding: 0;
   box-sizing: border-box;
 }
-.app {
+
+.background {
   margin-top: 15px;
   padding: 20px;
+  background-image: linear-gradient(166deg, #fff, #f8f8f8);
 }
 
 </style>
