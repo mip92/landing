@@ -29,7 +29,6 @@ export default {
 
 .background {
   margin-top: 15px;
-  padding: 20px;
   background-image: linear-gradient(166deg, #fff, #f8f8f8);
 }
 

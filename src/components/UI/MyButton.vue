@@ -13,7 +13,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
-$twilight-blue: #083d77;
+@import "./src/style/style";
+
 .btn {
   padding: 0;
   border: none;
@@ -26,14 +27,7 @@ $twilight-blue: #083d77;
   background-color: $twilight-blue;
 
   .Request-a-free-consu {
-    height: 34px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 21px;
-    font-weight: 900;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-
+    @include eggSmallTitle();
     text-align: right;
     color: #fff;
     display: flex;

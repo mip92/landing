@@ -25,7 +25,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
+@import "src/style/style";
 @media screen and (min-width: 1440px) {
   .topic {
     display: flex;
@@ -35,62 +35,39 @@ export default {
       width: 903px;
       height: 35px;
       margin: 168px 253px 168px 28px;
-      font-family: "Open Sans";
-      font-size: 35px;
-      font-weight: 900;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1;
-      letter-spacing: -0.88px;
       text-align: right;
-      color: var(--black);
+      @include middleTitleText();
+      color: $black;
     }
   }
 }
-
-
 @media screen and (min-width: 768px) and (max-width: 1439px) {
   .topic {
     display: flex;
     justify-content: center;
-
     .content {
       width: 585px;
       height: 25px;
       margin: 139px 91px 165px 42px;
-      font-family: "Open Sans";
-      font-size: 25px;
-      font-weight: 900;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1;
-      letter-spacing: -0.63px;
       text-align: right;
-      color: var(--black);
+      color: $black;
+      @include topicContent()
     }
   }
 }
-
 @media screen and (min-width: 375px) and (max-width: 767px) {
   .topic {
     padding-top: 450px;
     display: flex;
     justify-content: center;
-
     .content {
       position: absolute;
       width: 345px;
       height: 50px;
       margin: 50px 15px;
-      font-family: "Open Sans";
-      font-size: 25px;
-      font-weight: 900;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1;
-      letter-spacing: -0.63px;
       text-align: right;
-      color: var(--black);
+      @include topicContent();
+      color: $black;
     }
   }
   .carousel {

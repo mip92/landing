@@ -1,18 +1,27 @@
 <template>
   <section id="expenses">
     <div class="wrapper_content3">
-      <div class="content2">
-        Expenses reduction after implementing logistics management software!
+      <div class="content3_flex">
+        <div class="content2">
+          Expenses reduction after implementing logistics management software!
+        </div>
+        <div class="content3">
+          49,2%
+        </div>
       </div>
-      <div class="content3">
-        49,2%
-      </div>
+    </div>
+    <div class="egg_tray">
+      <div class="egg_tray_content"></div>
+      <egg-tray></egg-tray>
     </div>
   </section>
 </template>
 
 <script>
+import EggTray from "@/components/EggTray";
+
 export default {
+  components: {EggTray},
   props: {},
   data() {
     return {}
@@ -22,88 +31,128 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "src/style/style";
 
 @media screen and (min-width: 1440px) {
   .wrapper_content3 {
+    .content3_flex {
+      margin-top: 248px;
+      display: flex;
+      justify-content: space-around;
+
+      .content2 {
+        width: 345px;
+        height: 100px;
+        margin: 5px 0 0;
+        @include wrapperContent();
+        color: $charcoal;
+      }
+
+      .content3 {
+        margin: 0;
+        font-family: 'Open Sans', sans-serif;
+        text-align: center;
+        justify-content: center;
+        font-size: 80px;
+        width: 346px;
+        height: 100px;
+        color: $charcoal;
+      }
+    }
+  }
+  .egg_tray {
+    margin: 271px 5px 58px 30px;
+    padding: 44px 108px 60px 88px;
+    object-fit: contain;
+
+    .egg_tray_content {
+      width: 960px;
+      height: 608px;
+      background-image: url(/public/imgs/eggTray.svg);
+    }
+
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .content3_flex {
     margin-top: 248px;
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: stretch;
+
     .content2 {
       width: 345px;
       height: 100px;
       margin: 5px 0 0;
-      opacity: 0.75;
-      font-family: 'Open Sans';
-      font-size: 25px;
-      font-weight: normal;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1.2;
-      letter-spacing: -0.63px;
-      color: var(--charcoal)
+      @include wrapperContent();
+      color: $charcoal;
     }
+
     .content3 {
+      margin: 0;
       font-family: 'Open Sans';
       text-align: center;
       justify-content: center;
-      font-size: 6vm;
+      font-size: 80px;
       width: 346px;
       height: 100px;
-      margin: 0 0 5px;
-      background-color: var(--charcoal);
+      color: $charcoal;
     }
   }
-}
+  .egg_tray {
+    margin: 271px 5px 58px 0px;
+    padding: 44px 108px 60px 0px;
+    object-fit: contain;
 
-
-@media screen and (min-width: 768px) and (max-width: 1439px) {
-  .topic {
-    display: flex;
-    justify-content: center;
-
-    .content {
-      width: 585px;
-      height: 25px;
-      margin: 139px 91px 165px 42px;
-      font-family: "Open Sans";
-      font-size: 25px;
-      font-weight: 900;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1;
-      letter-spacing: -0.63px;
-      text-align: right;
-      color: var(--black);
+    .egg_tray_content {
+      margin-right: auto;
+      width: 570px;
+      height: 960px;
+      background-image: url(/public/imgs/middleSizeEgg.svg);
     }
   }
 }
 
 @media screen and (min-width: 375px) and (max-width: 767px) {
-  .topic {
-    padding-top: 450px;
+  .wrapper_content3 {
+    margin-top: 248px;
     display: flex;
+
     justify-content: center;
 
-    .content {
-      position: absolute;
-      width: 345px;
-      height: 50px;
-      margin: 50px 15px;
-      font-family: "Open Sans";
-      font-size: 25px;
-      font-weight: 900;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1;
-      letter-spacing: -0.63px;
-      text-align: right;
-      color: var(--black);
+    .content3_flex {
+      flex-direction: column;
+
+      .content2 {
+        width: 345px;
+        height: 100px;
+        @include smallContent2();
+        color: $charcoal;
+      }
+
+      .content3 {
+        margin: 0;
+        font-family: 'Open Sans';
+        text-align: center;
+        justify-content: center;
+        font-size: 80px;
+        width: 346px;
+        height: 100px;
+        color: $charcoal;
+      }
     }
   }
-  .carousel {
-    top: 168px;
+  .egg_tray {
+    margin-top: 271px;
+    padding-top: 44px;
+    object-fit: contain;
+
+    .egg_tray_content {
+      margin-right: auto;
+      width: 183px;
+      height: 960px;
+      background-image: url(/public/imgs/smallSizeEgg.svg);
+    }
   }
 }
 

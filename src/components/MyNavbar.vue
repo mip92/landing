@@ -29,29 +29,17 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@mixin myText() {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 17px;
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: 0.13px;
-  text-align: center;
-  color: var(--black);
-};
+@import "src/style/style.scss";
+
 @media screen and (min-width: 1440px) {
   .tablet {
-
     display: flex;
     height: 144px;
     align-items: center;
     justify-content: center;
-
     .logo {
       width: 64px;
       margin-right: auto;
-
       .logo_content {
         width: 204px;
         height: 64px;
@@ -67,11 +55,9 @@ export default {
 
     .languages {
       margin-left: auto;
-
       .language_content {
         display: flex;
         margin-right: 221px;
-
         .language {
           width: 60px;
           height: 24px;

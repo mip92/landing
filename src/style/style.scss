@@ -1,1 +1,166 @@
-$twilight-blue: "pink";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+$twilight-blue: #083d77;
+$charcoal: gray;
+$black: black;
+$white: white;
+
+@mixin myText() {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.13px;
+  text-align: center;
+  color: var(--black);
+};
+@mixin smallText() {
+  opacity: 0.75;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.43px;
+  color: var(--charcoal);
+}
+@mixin smallTitleText() {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: -0.75px;
+  color: var(--black);
+}
+@mixin middleTitleText(){
+  font-family: 'Open Sans', sans-serif;
+  font-size: 35px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: -0.88px;
+}
+@mixin bigTitleText(){
+  font-family: 'Open Sans', sans-serif;
+  font-size: 55px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: -1.38px;
+}
+@mixin bigText(){
+  opacity: 0.75;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 21px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.53px;
+}
+@mixin topicContent() {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 900;
+  font-size: 25px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: -0.63px;
+}
+
+@mixin wrapperContent(){
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: -0.63px;
+}
+
+@mixin smallContent2(){
+  opacity: 0.75;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18.8px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: -0.47px;
+}
+@mixin eggSmallTitle() {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 21px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: -0.53px;
+}
+
+@mixin eggSmallBody() {
+  opacity: 0.75;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.38px;
+}
+@mixin eggMiddleTitle() {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 21px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.53px;
+  text-align: center;
+  color: var(--black);
+}
+
+@mixin bigCarouselTitle{
+  font-family: "Open Sans";
+  font-size: 21px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.19;
+  letter-spacing: -0.53px;
+}
+
+@mixin bigCarouselBody {
+  font-family: 'Open Sans';
+  font-size: 17px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.43px;
+}
+
+@mixin middleCarouselTitle {
+  font-family: "Open Sans";
+  font-size: 21px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.19;
+  letter-spacing: -0.53px;
+}
+@mixin middleCarouselBody {
+  font-family: 'Open Sans';
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.38px;
+}

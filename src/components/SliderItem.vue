@@ -29,9 +29,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "./src/style/style";
 @media screen and (min-width: 1440px) {
   .item {
-    background: #083d77;
+    background: $twilight-blue;
     width: 420px;
     height: 368px;
     margin-right: 15px;
@@ -46,14 +47,8 @@ export default {
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
-        font-family: "Open Sans";
-        font-size: 21px;
-        font-weight: bold;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.19;
-        letter-spacing: -0.53px;
-        color: #fff;
+        @include bigCarouselTitle();
+        color: $white;
       }
     }
 
@@ -67,14 +62,8 @@ export default {
         width: 345px;
         height: 161px;
         margin: 22px 0 0;
-        font-family: 'Open Sans';
-        font-size: 17px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: normal;
-        letter-spacing: -0.43px;
-        color: #fff;
+        @include bigCarouselBody();
+        color: $white;
       }
     }
   }
@@ -82,7 +71,7 @@ export default {
 
 @media screen and (min-width: 768px) and (max-width: 1439px) {
   .item {
-    background: #083d77;
+    background: $twilight-blue;
     width: 375px;
     height: 368px;
     margin-right: 15px;
@@ -97,14 +86,8 @@ export default {
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
-        font-family: "Open Sans";
-        font-size: 21px;
-        font-weight: bold;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.19;
-        letter-spacing: -0.53px;
-        color: #fff;
+        @include middleCarouselTitle();
+        color: $white;
       }
     }
 
@@ -118,14 +101,8 @@ export default {
         width: 345px;
         height: 161px;
         margin: 22px 0 0;
-        font-family: 'Open Sans';
-        font-size: 15px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: normal;
-        letter-spacing: -0.38px;
-        color: #fff;
+        @include middleCarouselBody();
+        color: $white;
       }
     }
   }
@@ -133,7 +110,7 @@ export default {
 
 @media screen and (min-width: 375px) and (max-width: 767px) {
   .item {
-    background: #083d77;
+    background: $twilight-blue;
     width: 375px;
     height: 375px;
     margin-right: 15px;
@@ -148,12 +125,7 @@ export default {
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
-        font-family: "Open Sans";
-        font-size: 21px;
-        font-weight: bold;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.19;
+        @include middleCarouselTitle();
         letter-spacing: -0.53px;
         color: #fff;
       }
@@ -169,13 +141,7 @@ export default {
         width: 345px;
         height: 161px;
         margin: 22px 0 0;
-        font-family: 'Open Sans';
-        font-size: 15px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: normal;
-        letter-spacing: -0.38px;
+        @include middleCarouselBody();
         color: #fff;
       }
     }
