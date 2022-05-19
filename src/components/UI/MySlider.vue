@@ -1,5 +1,5 @@
 <template>
-  <carousel :items-to-show="1.5">
+  <carousel class="myCarousel" :items-to-show="1">
     <slide v-for="slide in 10" :key="slide">
       {{ slide }}
     </slide>
@@ -25,3 +25,9 @@ export default {
   },
 };
 </script>
+<style>
+.myCarousel{
+  left:50px;
+  width:500px;
+}
+</style>
