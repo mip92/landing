@@ -1,21 +1,18 @@
 <template>
-  <section id="logistic">
-    <div class="topic">
-      <div class="content">
-        Have you experienced any of these issues?
+  <section id="expenses">
+    <div class="wrapper_content3">
+      <div class="content2">
+        Expenses reduction after implementing logistics management software!
       </div>
-    </div>
-    <div class="carousel">
-      <my-slider></my-slider>
+      <div class="content3">
+        49,2%
+      </div>
     </div>
   </section>
 </template>
 
 <script>
-import MySlider from "@/components/UI/MySlider";
-
 export default {
-  components: {MySlider},
   props: {},
   data() {
     return {}
@@ -27,23 +24,35 @@ export default {
 <style scoped lang="scss">
 
 @media screen and (min-width: 1440px) {
-  .topic {
+  .wrapper_content3 {
+    margin-top: 248px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    .content {
-      width: 903px;
-      height: 35px;
-      margin: 168px 253px 168px 28px;
-      font-family: "Open Sans";
-      font-size: 35px;
-      font-weight: 900;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: stretch;
+    .content2 {
+      width: 345px;
+      height: 100px;
+      margin: 5px 0 0;
+      opacity: 0.75;
+      font-family: 'Open Sans';
+      font-size: 25px;
+      font-weight: normal;
       font-stretch: normal;
       font-style: normal;
-      line-height: 1;
-      letter-spacing: -0.88px;
-      text-align: right;
-      color: var(--black);
+      line-height: 1.2;
+      letter-spacing: -0.63px;
+      color: var(--charcoal)
+    }
+    .content3 {
+      font-family: 'Open Sans';
+      text-align: center;
+      justify-content: center;
+      font-size: 6vm;
+      width: 346px;
+      height: 100px;
+      margin: 0 0 5px;
+      background-color: var(--charcoal);
     }
   }
 }

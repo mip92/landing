@@ -3,6 +3,7 @@
     <my-navbar></my-navbar>
     <my-content1></my-content1>
     <my-content2></my-content2>
+    <my-content3></my-content3>
   </div>
 </template>
 
@@ -12,9 +13,10 @@ import MyButton from "@/components/UI/MyButton";
 import '@/style/style.scss'
 import MyContent1 from "@/components/MyContent1";
 import MyContent2 from "@/components/MyContent2";
+import MyContent3 from "@/components/MyContent3";
 
 export default {
-  components: {MyContent1, MyContent2, MyButton, MyNavbar}
+  components: {MyContent1, MyContent2, MyContent3, MyButton, MyNavbar}
 }
 </script>
 <style lang="scss">

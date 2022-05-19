@@ -14,7 +14,7 @@
       </carousel>
     </div>
   </div>
->>>>>>> f9366a3773a4084294012179a2ceab157d27f540
+
 </template>
 
 <script>
@@ -154,5 +154,4 @@ export default {
   }
 }
 
->>>>>>> f9366a3773a4084294012179a2ceab157d27f540
 </style>
