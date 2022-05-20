@@ -1,26 +1,38 @@
 <template>
   <section id="our_advantages">
-    <div class="content4">
+    <div class="centerField">
       <div>
         <span class="YOUR-BUSINESS-CASE-I">
           OUR BUSINESS CASEIS COMPLETELY DIFFERENT?
           <span class="text-style-1">
             LET’S DISCUSS
           </span>
-          <my-button>Fill in the contact form</my-button>
         </span>
+        <my-button>Fill in the contact form</my-button>
       </div>
     </div>
-    <our-advantages></our-advantages>
+    <div class="twoFields">
+      <div class="twoFieldsContent">
+        <div class="leftField">
+          <our-advantages></our-advantages>
+        </div>
+        <div class="rightField">
+          <div class="rightFieldContent">
+            <articles-field></articles-field>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 </template>
 
 <script>
 import MyButton from "@/components/UI/MyButton";
 import OurAdvantages from "@/components/OurAdvantages";
+import ArticlesField from "@/components/ArticlesField";
 
 export default {
-  components: {MyButton, OurAdvantages},
+  components: {MyButton, OurAdvantages, ArticlesField},
   props: {},
   data() {
     return {}
@@ -32,13 +44,18 @@ export default {
 <style scoped lang="scss">
 @import "src/style/style";
 
-@media screen and (min-width: 768px) {
-  .content4 {
+@media screen and (min-width: 1440px) {
+  .centerField {
+    display: flex;
+    justify-content: center;
+
     div {
       display: flex;
       justify-content: center;
+      flex-direction: column;
+
       .YOUR-BUSINESS-CASE-I {
-        flex-direction: column;
+        justify-content: center;
         width: 345px;
         height: 90px;
         margin: 58px 132px 30px 156px;
@@ -51,37 +68,133 @@ export default {
         .text-style-1 {
           color: $watermelon;
         }
-        .btn {
-          margin-top: 30px;
+      }
+
+      .btn {
+        margin: 0px 144px 168px 144px;
+      }
+    }
+  }
+  .twoFields {
+    .twoFieldsContent {
+      flex-direction: row;
+      display: flex;
+      justify-content: right;
+
+      .leftField {
+        display: flex;
+        width: 531px;
+        height: 757px;
+      }
+
+      .rightField {
+        display: flex;
+        flex-direction: column;
+        width: 636px;
+        height: 757px;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.1);
+        background-image: linear-gradient(140deg, #fff, #efefef);
+
+        .rightFieldContent {
+
         }
       }
     }
   }
 }
 
-@media screen and (min-width: 375px) and (max-width: 767px) {
-  .content4 {
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .centerField {
+    display: flex;
+    justify-content: center;
+
     div {
       display: flex;
       justify-content: center;
+      flex-direction: column;
+
       .YOUR-BUSINESS-CASE-I {
-        flex-direction: column;
+        justify-content: center;
         width: 345px;
-        height: 75px;
-        margin: 144px 15px 41px;
+        height: 90px;
+        margin: 58px 132px 30px 156px;
         @include yourBusinessCase();
-        font-size: 21px;
-        line-height: 1.19;
-        letter-spacing: -0.53px;
+        line-height: 1.2;
+        letter-spacing: -0.63px;
         text-align: center;
         color: $black;
 
         .text-style-1 {
           color: $watermelon;
         }
-        .btn {
-          margin-top: 52px;
+      }
+
+      .btn {
+        margin: 0px 144px 168px 144px;
+      }
+    }
+  }
+  .twoFields {
+    .twoFieldsContent {
+      flex-direction: column;
+      display: flex;
+      justify-content: center;
+      .leftField {
+        display: flex;
+        width: 531px;
+        height: 757px;
+        margin-left: 79px;
+      }
+
+      .rightField {
+        justify-content: center;
+        display: flex;
+        .rightFieldContent {
+          justify-content: center;
+          display: flex;
+          flex-direction: column;
+          width: 636px;
+          height: 757px;
+          align-items: center;
+          box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.1);
+          background-image: linear-gradient(140deg, #fff, #efefef);
         }
+      }
+    }
+  }
+
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .centerField {
+    display: flex;
+    justify-content: center;
+
+    div {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      .YOUR-BUSINESS-CASE-I {
+        justify-content: center;
+        width: 345px;
+        height: 90px;
+        margin: 58px 132px 30px 156px;
+        @include eggMiddleTitle();
+        line-height: 1.2;
+        letter-spacing: -0.63px;
+        text-align: center;
+        color: $black;
+
+        .text-style-1 {
+          color: $watermelon;
+        }
+      }
+
+      .btn {
+        margin: 0px 144px 168px 144px;
       }
     }
   }

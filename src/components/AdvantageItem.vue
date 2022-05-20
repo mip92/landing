@@ -10,9 +10,14 @@
         </div>
       </div>
       <div class="advantage_body">
-        <div class="egg_body">
+        <div v-if="post.open">
           <div>{{ post.body }}</div>
         </div>
+      </div>
+      <div class="advantage_btn">
+        <my-button @click="$emit('removePost', post)">
+          скрыть
+        </my-button>
       </div>
     </div>
   </div>
@@ -72,85 +77,93 @@ export default {
       @include smallText();
       color: $black;
     }
+    .advantage_btn{
+      display: none;
+    }
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1439px) {
-  .egg_item {
+  .advantage_item {
     display: grid;
-    grid-template-columns: 150px 345px;
-    grid-template-rows: 39px 74px;
+    grid-template-columns: 34px 43px 345px;
+    grid-template-rows: 34px auto 26px;
 
-    .egg_circle {
+    .advantage_circle {
       display: flex;
       justify-content: center;
       align-items: center;
       grid-row-start: 1;
-      grid-row-end: 3;
+      grid-row-end: 2;
+      grid-column-start: 1;
+      grid-column-end: 2;
     }
 
-    .egg_title {
+    .advantage_title {
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      grid-column-start: 3;
+      grid-column-end: 4;
+      @include bigText();
+      color: $black;
+    }
+
+    .advantage_body {
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      grid-column-start: 3;
+      grid-column-end: 4;
+      @include smallText();
+      color: $black;
+    }
+    .advantage_btn{
+      display: none;
+    }
+  }
+}
+
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .advantage_item {
+    display: grid;
+    grid-template-columns: 15px 296px 24px auto;
+    grid-template-rows: 56px auto;
+
+    .advantage_circle {
+      display: none
+    }
+    .advantage_btn {
+      grid-row-start: 1;
+      grid-row-end: 2;
+      grid-column-start: 4;
+      grid-column-end: 5;
+    }
+    .advantage_title {
       display: flex;
       justify-content: left;
       align-items: center;
       grid-row-start: 1;
       grid-row-end: 2;
-      @include eggMiddleTitle();
+      grid-column-start: 2;
+      grid-column-end: 3;
+      @include bigText();
       color: $black;
     }
-
-    .egg_body {
+    .advantage_body {
       display: flex;
       justify-content: left;
       align-items: center;
       grid-row-start: 2;
       grid-row-end: 3;
-      @include eggSmallBody();
+      grid-column-start: 2;
+      grid-column-end: 3;
+      @include smallText();
       color: $black;
     }
   }
 }
 
-@media screen and (min-width: 375px) and (max-width: 767px) {
-  .egg_item {
-    display: grid;
-    grid-template-columns: 80px 30px 220px;
-    grid-template-rows: 18px 42px 10px 100px;
-
-    .egg_circle {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      grid-row-start: 1;
-      grid-row-end: 5;
-      grid-column-start: 1;
-      grid-column-end: 2;
-    }
-
-    .egg_title {
-      display: flex;
-      justify-content: left;
-      align-items: center;
-      grid-row-start: 2;
-      grid-row-end: 3;
-      grid-column-start: 3;
-      grid-column-end: 4;
-      @include eggSmallTitle();
-      color: $black;
-    }
-
-    .egg_body {
-      @include eggSmallBody();
-      color: $black;
-      display: flex;
-      justify-content: left;
-      align-items: center;
-      grid-row-start: 4;
-      grid-row-end: 5;
-      grid-column-start: 3;
-      grid-column-end: 4;
-    }
-  }
-}
 
 </style>

@@ -20,7 +20,7 @@ $watermelon: #ea5256;
 @mixin smallText() {
   opacity: 0.75;
   font-family: 'Open Sans', sans-serif;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -172,4 +172,15 @@ $watermelon: #ea5256;
   font-weight: 900;
   font-stretch: normal;
   font-style: normal;
+}
+
+@mixin authorName{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.43px;
+  text-align: right;
 }
