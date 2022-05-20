@@ -117,7 +117,6 @@ export default {
   .wrapper_content3 {
     margin-top: 248px;
     display: flex;
-
     justify-content: center;
 
     .content3_flex {

@@ -20,10 +20,11 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "src/style/style";
 .dot {
   height: 80px;
   width: 80px;
-  background-color: orange;
+  background-color: $orange;
   justify-content: center;
   align-items: center;
   border-radius: 50%;

@@ -3,6 +3,8 @@ $twilight-blue: #083d77;
 $charcoal: gray;
 $black: black;
 $white: white;
+$orange: orange;
+$watermelon: #ea5256;
 
 @mixin myText() {
   font-family: 'Open Sans', sans-serif;
@@ -163,4 +165,11 @@ $white: white;
   font-style: normal;
   line-height: normal;
   letter-spacing: -0.38px;
+}
+@mixin yourBusinessCase {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
 }

@@ -67,10 +67,11 @@ export default {
 </script>
 
 <style lang="scss">
+@import "src/style/style";
 @media screen and (min-width: 1440px) {
   .carousel__prev,
   .carousel__next {
-    background-color: orange;
+    background-color: $orange;
     border-radius: 0;
     width: 70px;
     height: 70px;
@@ -96,7 +97,7 @@ export default {
 @media screen and (min-width: 768px) and (max-width: 1439px) {
   .carousel__prev,
   .carousel__next {
-    background-color: orange;
+    background-color: $orange;
     border-radius: 0;
     width: 70px;
     height: 70px;
@@ -122,7 +123,7 @@ export default {
 @media screen and (min-width: 375px) and (max-width: 767px) {
   .carousel__prev,
   .carousel__next {
-    background-color: orange;
+    background-color: $orange;
     border-radius: 0;
     width: 70px;
     height: 70px;
