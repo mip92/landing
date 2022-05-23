@@ -73,7 +73,7 @@ export default {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1439px) {
+@media screen and (min-width: 768px) and (max-width: 1439.98px) {
   .egg_item {
     display: grid;
     grid-template-columns: 150px 345px;
@@ -109,7 +109,7 @@ export default {
   }
 }
 
-@media screen and (min-width: 375px) and (max-width: 767px) {
+@media screen and (min-width: 375px) and (max-width: 767.98px) {
   .egg_item {
     display: grid;
     grid-template-columns: 80px 30px 220px;

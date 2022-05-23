@@ -69,7 +69,7 @@ export default {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1439px) {
+@media screen and (min-width: 768px) and (max-width: 1439.98px) {
   .item {
     background: $twilight-blue;
     width: 375px;
@@ -108,13 +108,11 @@ export default {
   }
 }
 
-@media screen and (min-width: 375px) and (max-width: 767px) {
+@media screen and (min-width: 375px) and (max-width: 767.98px) {
   .item {
     background: $twilight-blue;
     width: 375px;
     height: 375px;
-    margin-right: 15px;
-
     .title {
       margin: 92px 30px 15px;
       width: 345px;

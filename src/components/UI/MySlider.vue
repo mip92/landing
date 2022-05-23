@@ -1,6 +1,6 @@
 <template>
-  <div class="MyWrapper">
-    <div class="wrapper">
+  <div class="MyWrapperSlider">
+    <div class="wrapperSlider">
       <carousel class="myCarosel" :items-to-show="sliderItemCount">
         <slide v-for="post in posts"
                :post="post"
@@ -88,13 +88,13 @@ export default {
     top: 403px;
     left: 50px
   }
-  .wrapper {
+  .wrapperSlider {
     margin-left: auto;
     width: 1400px;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1439px) {
+@media screen and (min-width: 768px) and (max-width: 1439.98px) {
   .carousel__prev,
   .carousel__next {
     background-color: $orange;
@@ -114,13 +114,13 @@ export default {
     top: 403px;
     left: 35px
   }
-  .wrapper {
+  .wrapperSlider {
     margin-left: auto;
     width: 768px;
   }
 }
-
-@media screen and (min-width: 375px) and (max-width: 767px) {
+/*screen and (device-width: 768px)*/
+@media screen and (min-width: 375px) and (max-width: 767.98px){
   .carousel__prev,
   .carousel__next {
     background-color: $orange;
@@ -140,18 +140,16 @@ export default {
     top: 410px;
     left: 270px
   }
-  .MyWrapper {
+  .MyWrapperSlider {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  .wrapper {
-    width: 375px;
-
-    .carousel {
-
+    .wrapperSlider {
+      width: 375px;
+      .carousel {
+        max-width: 375px;
+      }
     }
-
   }
 }
 

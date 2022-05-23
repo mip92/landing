@@ -1,14 +1,14 @@
 <template>
   <section id="logistic">
     <div class="elem1">
-      <div class="elem_content1"></div>
+      <div class="elem_content1" v-if="!isOpen"></div>
     </div>
     <div class="elem2">
       <div class="elem_content2"></div>
     </div>
-    <div class="text">
-      <div class="title">LOGISTICS MANAGEMENT SOFTWARE DEVELOPMENT</div>
-      <div class="body">We solve transportation and stock management problems for Factories, Manufacturers, Carriers,
+    <div class="text" >
+      <div class="title" v-if="!isOpen">LOGISTICS MANAGEMENT SOFTWARE DEVELOPMENT</div>
+      <div class="body" v-if="!isOpen">We solve transportation and stock management problems for Factories, Manufacturers, Carriers,
         Resellers, E-commerce and even more. Any issue can be solved with smart digitalization.
       </div>
       <my-button class="btn">Request a free consultation</my-button>
@@ -18,7 +18,12 @@
 
 <script>
 export default {
-  props: {},
+  props: {
+    isOpen: {
+      type: Boolean,
+      required: true
+    }
+  },
   data() {
     return {}
   },
@@ -85,7 +90,7 @@ export default {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1439px) {
+@media screen and (min-width: 768px) and (max-width: 1439.98px) {
   .elem2 {
     position: relative;
     display: flex;
@@ -127,7 +132,7 @@ export default {
   }
 }
 
-@media screen and (min-width: 375px) and (max-width: 767px) {
+@media screen and (min-width: 375px) and (max-width: 767.98px) {
   .elem2 {
     position: relative;
     display: flex;

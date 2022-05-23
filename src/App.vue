@@ -1,7 +1,7 @@
 <template>
   <div class="background">
-    <my-navbar></my-navbar>
-    <my-content1></my-content1>
+    <my-navbar :isOpen="isOpen" @open="setOpenNavbarBurger"></my-navbar>
+    <my-content1 :isOpen="isOpen"></my-content1>
     <my-content2></my-content2>
     <my-content3></my-content3>
     <my-content4></my-content4>
@@ -17,8 +17,19 @@ import MyContent2 from "@/components/MyContent2";
 import MyContent3 from "@/components/MyContent3";
 import MyContent4 from "@/components/MyContent4";
 
+
 export default {
-  components: {MyContent1, MyContent2, MyContent3, MyContent4, MyButton, MyNavbar}
+  components: {MyContent1, MyContent2, MyContent3, MyContent4, MyButton, MyNavbar},
+  data() {
+    return {
+      isOpen: false
+    }
+  },
+  methods: {
+    setOpenNavbarBurger() {
+      this.isOpen = !this.isOpen
+    },
+  }
 }
 </script>
 <style lang="scss">

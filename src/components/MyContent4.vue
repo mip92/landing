@@ -105,7 +105,7 @@ export default {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1439px) {
+@media screen and (min-width: 768px) and (max-width: 1439.98px) {
   .centerField {
     display: flex;
     justify-content: center;
@@ -167,7 +167,7 @@ export default {
 
 }
 
-@media screen and (min-width: 375px) and (max-width: 767px) {
+@media screen and (min-width: 375px) and (max-width: 767.98px) {
   .centerField {
     display: flex;
     justify-content: center;
@@ -181,7 +181,6 @@ export default {
         justify-content: center;
         width: 345px;
         height: 90px;
-        margin: 58px 132px 30px 156px;
         @include eggMiddleTitle();
         line-height: 1.2;
         letter-spacing: -0.63px;
@@ -194,7 +193,30 @@ export default {
       }
 
       .btn {
-        margin: 0px 144px 168px 144px;
+        margin: 0px 0px 168px 0px;
+      }
+    }
+  }
+  .twoFields{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    .leftField {
+      display: flex;
+      justify-content: center;
+    }
+    .rightField {
+      justify-content: center;
+      display: flex;
+      .rightFieldContent {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        width: 345px;
+        height: 625px;
+        padding: 25px;
+        box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.1);
+        background-image: linear-gradient(151deg, #fff, #efefef 100%);
       }
     }
   }

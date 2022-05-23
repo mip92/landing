@@ -45,7 +45,7 @@ export default {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1439px) {
+@media screen and (min-width: 768px) and (max-width: 1439.98px) {
   .one_article {
     .Flawless-communicati {
       width: 415px;
@@ -60,8 +60,20 @@ export default {
   }
 }
 
-@media screen and (min-width: 375px) and (max-width: 767px) {
-
+@media screen and (min-width: 375px) and (max-width: 767.98px) {
+  .one_article {
+    .Flawless-communicati {
+      width: 295px;
+      height: 220px;
+      margin: 0 0 15px;
+      @include middleCarouselBody();
+      font-weight: 600;
+      color: $black;
+    }
+    .author-block{
+      margin-bottom: 90px;
+    }
+  }
 }
 
 </style>

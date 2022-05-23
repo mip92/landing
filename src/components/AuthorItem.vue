@@ -86,7 +86,7 @@ export default {
 }
 
 
-@media screen and (min-width: 375px) and (max-width: 767px) {
+@media screen and (min-width: 375px) and (max-width: 767.98px)  {
   .author_item {
     grid-template-columns: 236px 17px 44px;
   }

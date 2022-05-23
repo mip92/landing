@@ -8,7 +8,7 @@
                       :key="post.id"
                       :post="post"
                       :eggClass="'advantage'+post.id"
-                      @removePost='removePost'
+                      @setOpenPost='setOpenPost'
       >
       </advantage-item>
     </div>
@@ -64,12 +64,27 @@ export default {
     }
   },
   methods: {
-    removePost(post) {
+    setOpenPost(post) {
       this.posts.filter((p) => {
-        if(p.id === post.id) {p.open = !p.open}
+        if (p.id === post.id) {
+          p.open = !p.open
+        }
       })
-    }
-  }
+    },
+    updateWidth() {
+      this.width = window.innerWidth;
+      if (this.width < 768) {
+        this.posts.forEach((p)=>{return p.open=false})
+      }
+      else {
+        this.posts.forEach((p)=>{return p.open=true})
+      }
+    },
+  },
+  created() {
+    window.addEventListener('resize', this.updateWidth);
+    this.updateWidth();
+  },
 }
 </script>
 
@@ -94,7 +109,7 @@ export default {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1439px) {
+@media screen and (min-width: 768px) and (max-width: 1439.98px) {
   .ourAdvantages {
     .OUR-ADVANTAGES {
       width: 505px;
@@ -112,8 +127,22 @@ export default {
   }
 }
 
-@media screen and (min-width: 375px) and (max-width: 767px) {
+@media screen and (min-width: 375px) and (max-width: 767.98px) {
+  .ourAdvantages {
+    .OUR-ADVANTAGES {
+      width: 345px;
+      height: 44px;
+      @include topicContent();
+      color: var(--black);
+    }
 
+    .advantages_wrapper {
+
+      margin-top: 49px;
+      display: flex;
+      flex-direction: column;
+    }
+  }
 }
 
 

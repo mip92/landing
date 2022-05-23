@@ -14,10 +14,9 @@
           <div>{{ post.body }}</div>
         </div>
       </div>
-      <div class="advantage_btn">
-        <my-button @click="$emit('removePost', post)">
-          скрыть
-        </my-button>
+      <div>
+        <div v-if="post.open" class="advantage_btn_open" @click="$emit('setOpenPost', post)"></div>
+        <div v-if="!post.open" class="advantage_btn_closed" @click="$emit('setOpenPost', post)"></div>
       </div>
     </div>
   </div>
@@ -83,7 +82,7 @@ export default {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1439px) {
+@media screen and (min-width: 768px) and (max-width: 1439.98px) {
   .advantage_item {
     display: grid;
     grid-template-columns: 34px 43px 345px;
@@ -124,21 +123,39 @@ export default {
   }
 }
 
-
-@media screen and (min-width: 375px) and (max-width: 767px) {
+@media screen and (min-width: 375px) and (max-width: 767.98px)  {
   .advantage_item {
     display: grid;
-    grid-template-columns: 15px 296px 24px auto;
+    grid-template-columns: 15px 296px 24px 24px;
     grid-template-rows: 56px auto;
-
     .advantage_circle {
       display: none
     }
-    .advantage_btn {
+    div{
+      display: flex;
+      justify-content: left;
+      align-items: center;
       grid-row-start: 1;
       grid-row-end: 2;
       grid-column-start: 4;
       grid-column-end: 5;
+      .advantage_btn_open {
+        cursor: pointer;
+        height: 24px;
+        width: 24px;
+        background-image: url(/public/imgs/arrow.svg);
+        background-repeat: no-repeat;
+        background-position:center;
+        transform: rotate(180deg);
+      }
+      .advantage_btn_closed {
+        cursor: pointer;
+        height: 24px;
+        width: 24px;
+        background-image: url(/public/imgs/arrow.svg);
+        background-repeat: no-repeat;
+        background-position:center;
+      }
     }
     .advantage_title {
       display: flex;

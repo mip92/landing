@@ -74,7 +74,7 @@ export default {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1439px) {
+@media screen and (min-width: 768px) and (max-width: 1439.98px) {
   .content3_flex {
     margin-top: 248px;
     display: flex;
@@ -113,7 +113,7 @@ export default {
   }
 }
 
-@media screen and (min-width: 375px) and (max-width: 767px) {
+@media screen and (min-width: 375px) and (max-width: 767.98px) {
   .wrapper_content3 {
     margin-top: 248px;
     display: flex;

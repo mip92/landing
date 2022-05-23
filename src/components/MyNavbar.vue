@@ -3,28 +3,48 @@
     <div class="logo">
       <div class="logo_content"></div>
     </div>
-    <div class="text">Benefits</div>
-    <div class="text">Advantages</div>
-    <div class="text">Achievements</div>
+    <div class="burger" v-if="!isOpen">
+      <div class="text">Benefits!</div>
+      <div class="text">Advantages!</div>
+      <div class="text">Achievements!</div>
+    </div>
+    <div class="burger_open" v-if="isOpen">
+      <div class="text_open">Benefits</div>
+      <div class="text_open">Advantages</div>
+      <div class="text_open">Achievements</div>
+      <div class="just_small_text">Imprint and Data protection</div>
+    </div>
     <div class="languages">
       <div class="language_content">
         <div class="language">DE</div>
         <div class="language">EN</div>
       </div>
     </div>
+    <div v-if="isOpen" class="languages_small">
+      <div class="language_content">
+        <div class="language_small">Language</div>
+        <div class="language">DE</div>
+        <div class="language">EN</div>
+      </div>
+    </div>
     <div class="menu">
-      <div class="menu_content"></div>
+      <div v-if="isOpen" @click="$emit('open')"  class="menu_content_open"></div>
+      <div v-if="!isOpen" @click="$emit('open')" class="menu_content_closed"></div>
     </div>
   </navbar>
 </template>
 
 <script>
 export default {
-  props: {},
+  props: {
+    isOpen: {
+      type: Boolean,
+      required: true
+    }
+  },
   data() {
     return {}
   },
-  methods: {}
 }
 </script>
 
@@ -37,9 +57,10 @@ export default {
     height: 144px;
     align-items: center;
     justify-content: center;
+
     .logo {
-      width: 64px;
       margin-right: auto;
+
       .logo_content {
         width: 204px;
         height: 64px;
@@ -47,17 +68,31 @@ export default {
         margin-left: 53px;
       }
     }
-    .text {
-      width: 144px;
-      height: 23px;
-      @include myText();
-    }
 
+    div {
+      display: flex;
+      justify-content: center;
+
+      .just_small_text, {
+        display: none;
+      }
+
+      .text, .text_open {
+        width: 144px;
+        height: 23px;
+        @include myText();
+      }
+    }
+    .languages_small{
+      display: none;
+    }
     .languages {
       margin-left: auto;
+
       .language_content {
         display: flex;
         margin-right: 221px;
+
         .language {
           width: 60px;
           height: 24px;
@@ -68,15 +103,15 @@ export default {
   ;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1439px) {
+
+@media screen and (min-width: 768px) and (max-width: 1439.98px) {
   .tablet {
     display: flex;
     height: 144px;
     align-items: center;
     justify-content: center;
-    background-size: cover;
+
     .logo {
-      width: 64px;
       margin-right: auto;
 
       .logo_content {
@@ -87,12 +122,23 @@ export default {
       }
     }
 
-    .text {
-      width: 120px;
-      height: 23px;
-      @include myText();
-    }
+    div {
+      display: flex;
+      justify-content: center;
 
+      .just_small_text {
+        display: none;
+      }
+
+      .text, .text_open {
+        width: 120px;
+        height: 23px;
+        @include myText();
+      }
+    }
+    .languages_small{
+      display: none;
+    }
     .languages {
       margin-left: auto;
 
@@ -110,7 +156,8 @@ export default {
   ;
   }
 }
-@media screen and (min-width: 375px) and (max-width: 767px) {
+
+@media screen and (min-width: 375px) and (max-width: 767.98px) {
   .tablet {
     display: flex;
     height: 144px;
@@ -128,15 +175,50 @@ export default {
       }
     }
 
-    .text, .languages {
+    .text, .languages, .just_small_text {
       display: none;
     }
-    .menu{
+    .languages_small{
+      position: absolute;
+      top: 500px;
+      .language_content{
+        width: 296px;
+        height: 56px;
+        display: flex;
+        .language_small{
+          margin-right: auto;
+        };
+        .language{
+          width: 50px;
+        };
+      }
+    }
+    .burger_open {
+      position: absolute;
+      top: 250px;
+
+      .text_open, .languages_open, .just_small_text, .language_small {
+        width: 296px;
+        height: 56px;
+        display: flex;
+      }
+    }
+
+    .menu {
       margin-left: auto;
-      .menu_content {
+      cursor: pointer;
+
+      .menu_content_closed {
         width: 24px;
         height: 24px;
         background-image: url(/public/imgs/menuBtn.svg);
+        margin-right: 35px;
+      }
+
+      .menu_content_open {
+        width: 24px;
+        height: 24px;
+        background-image: url(/public/imgs/x.svg);
         margin-right: 35px;
       }
     }

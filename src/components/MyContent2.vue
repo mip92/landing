@@ -41,7 +41,7 @@ export default {
     }
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1439px) {
+@media screen and (min-width: 768px) and (max-width: 1439.98px) {
   .topic {
     display: flex;
     justify-content: center;
@@ -55,7 +55,7 @@ export default {
     }
   }
 }
-@media screen and (min-width: 375px) and (max-width: 767px) {
+@media screen and (min-width: 375px) and (max-width: 767.98px) {
   .topic {
     padding-top: 450px;
     display: flex;
