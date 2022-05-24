@@ -28,7 +28,7 @@
       </div>
     </div>
     <div class="menu">
-      <div v-if="isOpen" @click="$emit('open')"  class="menu_content_open"></div>
+      <div v-if="isOpen" @click="$emit('open')" class="menu_content_open"></div>
       <div v-if="!isOpen" @click="$emit('open')" class="menu_content_closed"></div>
     </div>
   </navbar>
@@ -83,9 +83,11 @@ export default {
         @include myText();
       }
     }
-    .languages_small{
+
+    .languages_small {
       display: none;
     }
+
     .languages {
       margin-left: auto;
 
@@ -136,9 +138,11 @@ export default {
         @include myText();
       }
     }
-    .languages_small{
+
+    .languages_small {
       display: none;
     }
+
     .languages {
       margin-left: auto;
 
@@ -178,29 +182,51 @@ export default {
     .text, .languages, .just_small_text {
       display: none;
     }
-    .languages_small{
+
+    .languages_small {
+      width: 100%;
       position: absolute;
       top: 500px;
-      .language_content{
-        width: 296px;
+      border-top: 1px double $twilight-blue;
+      border-bottom: 1px double $twilight-blue;
+      .language_content {
+        align-items: center;
+        padding-left: 40px;
         height: 56px;
         display: flex;
-        .language_small{
+
+        .language_small {
           margin-right: auto;
-        };
-        .language{
+          @include bigText();
+          color: $black;
+        }
+        .language {
+          padding-right: 70px;
+          @include bigText();
+          color: $black;
           width: 50px;
-        };
+        }
+      ;
       }
     }
+
     .burger_open {
       position: absolute;
-      top: 250px;
+      top: 200px;
+      width: 100%;
 
       .text_open, .languages_open, .just_small_text, .language_small {
-        width: 296px;
+        align-items: center;
+        padding-left: 40px;
+        border-top: 1px double $twilight-blue;
         height: 56px;
         display: flex;
+        @include bigText();
+        color: $black;
+      }
+
+      .just_small_text {
+        border-bottom: 1px double $twilight-blue;
       }
     }
 

@@ -11,13 +11,18 @@
       <div class="body" v-if="!isOpen">We solve transportation and stock management problems for Factories, Manufacturers, Carriers,
         Resellers, E-commerce and even more. Any issue can be solved with smart digitalization.
       </div>
-      <my-button class="btn">Request a free consultation</my-button>
+      <my-button class="btn" @click="openDiscus">Request a free consultation</my-button>
+      <my-dialog v-model:show="isDiscusVisible">
+        <lets-discus></lets-discus>
+      </my-dialog>
     </div>
   </section>
 </template>
 
 <script>
+import LetsDiscus from "@/components/letsDiscus";
 export default {
+  components: {LetsDiscus},
   props: {
     isOpen: {
       type: Boolean,
@@ -25,9 +30,16 @@ export default {
     }
   },
   data() {
-    return {}
+    return {
+      isDiscusVisible: true,
+      isPostsLoading: false,
+    }
   },
-  methods: {}
+  methods: {
+    openDiscus(){
+      this.isDiscusVisible=true
+    }
+  }
 }
 </script>
 

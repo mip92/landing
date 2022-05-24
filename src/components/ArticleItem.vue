@@ -63,15 +63,16 @@ export default {
 @media screen and (min-width: 375px) and (max-width: 767.98px) {
   .one_article {
     .Flawless-communicati {
+      padding-top: 20px;
       width: 295px;
-      height: 220px;
+      height: auto;
       margin: 0 0 15px;
       @include middleCarouselBody();
       font-weight: 600;
       color: $black;
     }
     .author-block{
-      margin-bottom: 90px;
+      margin-bottom: 30px;
     }
   }
 }

@@ -5,6 +5,9 @@
     <my-content2></my-content2>
     <my-content3></my-content3>
     <my-content4></my-content4>
+    <my-content5></my-content5>
+    <my-content6></my-content6>
+    <my-footer></my-footer>
   </div>
 </template>
 
@@ -16,10 +19,12 @@ import MyContent1 from "@/components/MyContent1";
 import MyContent2 from "@/components/MyContent2";
 import MyContent3 from "@/components/MyContent3";
 import MyContent4 from "@/components/MyContent4";
-
+import MyContent6 from "@/components/MyContent6";
+import MyContent5 from "@/components/MyContent5";
+import MyFooter from "@/components/MyFooter";
 
 export default {
-  components: {MyContent1, MyContent2, MyContent3, MyContent4, MyButton, MyNavbar},
+  components: {MyFooter, MyContent5, MyContent6, MyContent1, MyContent2, MyContent3, MyContent4, MyButton, MyNavbar},
   data() {
     return {
       isOpen: false

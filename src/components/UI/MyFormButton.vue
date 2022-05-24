@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  name: 'my-button'
+  name: 'my-form-button'
 }
 </script>
 
@@ -20,15 +20,15 @@ export default {
     padding: 0;
     border: none;
     cursor: pointer;
-    width: 345px;
-    height: 72px;
+    width: 240px;
+    height: 44px;
     margin: 0 0 5px;
     object-fit: contain;
-    border-radius: 72px;
+    border-radius: 22px;
     background-color: $twilight-blue;
 
     .Request-a-free-consu {
-      @include eggSmallTitle();
+      @include bigCarouselBody();
       text-align: right;
       color: #fff;
       display: flex;
@@ -42,15 +42,15 @@ export default {
     padding: 0;
     border: none;
     cursor: pointer;
-    width: 345px;
-    height: 56px;
+    width: 295px;
+    height: 44px;
     margin: 0 0 5px;
     object-fit: contain;
-    border-radius: 72px;
+    border-radius: 22px;
     background-color: $twilight-blue;
 
     .Request-a-free-consu {
-      @include eggSmallTitle();
+      @include bigCarouselBody();
       text-align: right;
       color: #fff;
       display: flex;

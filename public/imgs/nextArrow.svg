@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="84px" height="87px" viewBox="0 0 84 87" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 54.1 (76490) - https://sketchapp.com -->
+    <title>C2BC6266-88DF-469A-8289-4246D5C80EF0</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <filter x="-25.0%" y="-25.0%" width="150.0%" height="150.0%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="5" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Logistics-tablet-" transform="translate(-129.000000, -1419.000000)">
+            <g id="Slider-buttons" transform="translate(66.000000, 1419.000000)">
+                <g id="Components-/-Buttons-/-Next-button-active" transform="translate(70.000000, 0.000000)">
+                    <rect id="Rectangle" fill-opacity="0.5" fill="#D05826" filter="url(#filter-1)" x="5" y="15" width="60" height="60"></rect>
+                    <g id="Next-button" stroke-width="1">
+                        <rect id="Rectangle" fill="#F79369" x="0" y="0" width="70" height="70"></rect>
+                        <g id="Components-/-Icons-/-arrow-right" transform="translate(23.000000, 23.000000)">
+                            <g id="arrow-right">
+                                <rect id="Rectangle" transform="translate(12.000000, 12.000000) rotate(-180.000000) translate(-12.000000, -12.000000) " x="0" y="0" width="24" height="24"></rect>
+                                <path d="M11.3648744,14.3895031 L12.9493041,15.9318551 C13.9053379,16.8624996 13.9053379,18.3713723 12.9493041,19.3020167 C11.9932703,20.2326611 10.4432333,20.2326611 9.48719957,19.3020167 L3.71702533,13.6850808 C2.76099156,12.7544364 2.76099156,11.2455636 3.71702533,10.3149192 L9.48719957,4.69798331 C10.4432333,3.7673389 11.9932703,3.7673389 12.9493041,4.69798331 C13.9053379,5.62862772 13.9053379,7.13750045 12.9493041,8.06814486 L11.3648744,9.6104969 L18.6104969,9.6104969 C19.930183,9.6104969 21,10.6803139 21,12 C21,13.3196861 19.930183,14.3895031 18.6104969,14.3895031 L11.3648744,14.3895031 Z" id="Combined-Shape" fill="#1E1E1E" transform="translate(12.000000, 12.000000) rotate(-180.000000) translate(-12.000000, -12.000000) "></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -114,7 +114,8 @@ export default {
     width: 375px;
     height: 375px;
     .title {
-      margin: 92px 30px 15px;
+      margin-top: 92px;
+      margin-left: 15px;
       width: 345px;
       height: 50px;
       text-align: left;
