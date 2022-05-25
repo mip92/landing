@@ -63,7 +63,11 @@ export default {
 
       .carousel__prev,
       .carousel__next {
-        background-color: $orange;
+        background-color: inherit;
+        background-image: url(/public/imgs/rightArrow.svg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
         border-radius: 0;
         width: 70px;
         height: 70px;
@@ -79,10 +83,17 @@ export default {
         top: -40px;
         margin-left: 600px;
       }
-
       .carousel__next {
         top: -40px;
         margin-right: 600px;
+      }
+      .carousel__icon{
+        display: none;
+      }
+      .carousel__prev{
+        background-image: url(/public/imgs/leftArrow.svg);
+        top:-40px;
+        left: 0px
       }
     }
 
@@ -92,7 +103,7 @@ export default {
 
       .carousel__pagination {
         position: absolute;
-        top: -50px
+        top: -78px
       }
     }
   }
@@ -109,7 +120,12 @@ export default {
 
       .carousel__prev,
       .carousel__next {
-        background-color: $orange;
+        background-color: inherit;
+        background-image: url(/public/imgs/rightArrow.svg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: 100%;
         border-radius: 0;
         width: 70px;
         height: 70px;
@@ -130,6 +146,14 @@ export default {
         top: -40px;
         margin-right: 300px;
       }
+      .carousel__icon{
+        display: none;
+      }
+      .carousel__prev{
+        background-image: url(/public/imgs/leftArrow.svg);
+        top:-40px;
+        left: 0px
+      }
     }
 
     .my_second_paginator {
@@ -138,7 +162,7 @@ export default {
 
       .carousel__pagination {
         position: absolute;
-        top: -50px
+        top: -78px
       }
     }
   }
@@ -156,7 +180,11 @@ export default {
       .carousel__prev,
       .carousel__next {
         background-color: inherit;
-        background-image: url(/public/imgs/nextArrow.svg);
+        background-image: url(/public/imgs/rightArrow.svg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: 100%;
         border-radius: 0;
         width: 70px;
         height: 70px;
@@ -183,9 +211,9 @@ export default {
         display: none;
       }
       .carousel__prev{
-        transform: rotate(180deg);
-        top:285px;
-        left: 30px
+        background-image: url(/public/imgs/leftArrow.svg);
+        top:320px;
+        left: 60px
       }
     }
 
@@ -195,7 +223,7 @@ export default {
 
       .carousel__pagination {
         position: absolute;
-        top: 300px
+        top: 285px
       }
     }
   }

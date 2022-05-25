@@ -1,5 +1,5 @@
 <template>
-  <navbar class="tablet">
+  <div class="tablet">
     <div class="logo">
       <div class="logo_content"></div>
     </div>
@@ -31,7 +31,7 @@
       <div v-if="isOpen" @click="$emit('open')" class="menu_content_open"></div>
       <div v-if="!isOpen" @click="$emit('open')" class="menu_content_closed"></div>
     </div>
-  </navbar>
+  </div>
 </template>
 
 <script>

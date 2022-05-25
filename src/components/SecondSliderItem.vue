@@ -152,6 +152,7 @@ export default {
         color: $black;
       }
       img{
+        margin-top: 30px;
         width: 345px
       }
     }

@@ -22,7 +22,6 @@
 </template>
 
 <script>
-//import 'vue3-carousel/dist/carousel.css';
 import {Carousel, Slide, Pagination, Navigation} from 'vue3-carousel';
 import SliderItem from "@/components/SliderItem";
 
@@ -74,13 +73,33 @@ export default {
 <style lang="scss">
 @import "src/style/style";
 @import "~vue3-carousel/dist/carousel.css";
-
+.carousel__pagination-item {
+  display: flex;
+  button {
+    margin-top: 28px;
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+  }
+  .carousel__pagination-button{
+    background-color: $charcoal;
+  }
+  .carousel__pagination-button--active{
+    background-color: black;
+  }
+}
 @media screen and (min-width: 1440px) {
   .first_slider_navigation {
     .carousel__prev,
     .carousel__next {
-      background-color: $orange;
+      background-color: inherit;
+      background-image: url(/public/imgs/rightArrow.svg);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      background-size: 100%;
       border-radius: 0;
+      box-shadow: -4px 6px 5px #FFDAB9;
       width: 70px;
       height: 70px;
       text-align: center;
@@ -93,6 +112,16 @@ export default {
       position: absolute;
       border: 0;
       cursor: pointer;
+      top: 404px;
+      left: 50px
+    }
+
+    .carousel__icon {
+      display: none;
+    }
+
+    .carousel__prev {
+      background-image: url(/public/imgs/leftArrow.svg);
       top: 403px;
       left: 50px
     }
@@ -108,7 +137,12 @@ export default {
     .carousel__prev,
     .carousel__next {
       background-color: inherit;
-      background-image: url(/public/imgs/nextArrow.svg);
+      background-image: url(/public/imgs/rightArrow.svg);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      background-size: 100%;
+      box-shadow: -4px 6px 5px #FFDAB9;
       border-radius: 0;
       width: 70px;
       height: 70px;
@@ -123,15 +157,17 @@ export default {
       border: 0;
       cursor: pointer;
       top: 402px;
-      left: 21px
+      left: 35px
     }
-    .carousel__icon{
+
+    .carousel__icon {
       display: none;
     }
-    .carousel__prev{
-      transform: rotate(180deg);
-      top:368px;
-      left: 0px
+
+    .carousel__prev {
+      background-image: url(/public/imgs/leftArrow.svg);
+      top: 402px;
+      left: 35px
     }
   }
   .wrapperSlider {
@@ -140,16 +176,19 @@ export default {
   }
 }
 
-
 @media screen and (min-width: 375px) and (max-width: 767.98px) {
   .first_slider_navigation {
     .carousel__prev,
     .carousel__next {
-      background-color: inherit;
-      background-image: url(/public/imgs/nextArrow.svg);
       border-radius: 0;
       width: 70px;
       height: 70px;
+      background-color: inherit;
+      background-image: url(/public/imgs/rightArrow.svg);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      box-shadow: -4px 6px 5px #FFDAB9;
       text-align: center;
       font-size: calc(var(--vc-nav-width) * 2 / 3);
       padding: 0;
@@ -163,16 +202,22 @@ export default {
       top: 410px;
       left: 270px
     }
-    .carousel_slide{}
-    .carousel__icon{
+
+    .carousel_slide {
+    }
+
+    .carousel__icon {
       display: none;
     }
-    .carousel__prev{
-      transform: rotate(180deg);
-      top:375px;
-      left: 248px
+
+    .carousel__prev {
+      background-image: url(/public/imgs/leftArrow.svg);
+      top: 410px;
+      left: 270px
     }
+
   }
+
   .MyWrapperSlider {
     display: flex;
     align-items: center;

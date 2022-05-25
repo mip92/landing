@@ -31,7 +31,7 @@ export default {
   },
   data() {
     return {
-      isDiscusVisible: true,
+      isDiscusVisible: false,
       isPostsLoading: false,
     }
   },

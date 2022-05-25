@@ -8,6 +8,7 @@
     <my-content5></my-content5>
     <my-content6></my-content6>
     <my-footer></my-footer>
+    <left-scroll></left-scroll>
   </div>
 </template>
 
@@ -22,9 +23,12 @@ import MyContent4 from "@/components/MyContent4";
 import MyContent6 from "@/components/MyContent6";
 import MyContent5 from "@/components/MyContent5";
 import MyFooter from "@/components/MyFooter";
+import LeftScroll from "@/components/Left-Scroll";
 
 export default {
-  components: {MyFooter, MyContent5, MyContent6, MyContent1, MyContent2, MyContent3, MyContent4, MyButton, MyNavbar},
+  components: {
+    LeftScroll,
+    MyFooter, MyContent5, MyContent6, MyContent1, MyContent2, MyContent3, MyContent4, MyButton, MyNavbar},
   data() {
     return {
       isOpen: false

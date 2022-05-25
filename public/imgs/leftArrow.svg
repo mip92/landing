@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70px" height="70px" viewBox="0 0 70 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>099745CD-0166-47F6-89AE-261F5E93D603</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.25">
+        <g id="Components-/-Buttons-/-Prev-button-inactive">
+            <g id="Prev-button">
+                <rect id="Rectangle" fill="#F79369" x="0" y="0" width="70" height="70"></rect>
+                <g id="arrow-right" transform="translate(35.000000, 35.000000) scale(-1, 1) translate(-35.000000, -35.000000) translate(23.000000, 23.000000)">
+                    <rect id="Rectangle" transform="translate(12.000000, 12.000000) rotate(-180.000000) translate(-12.000000, -12.000000) " x="0" y="0" width="24" height="24"></rect>
+                    <path d="M11.3648744,14.3895031 L12.9493041,15.9318551 C13.9053379,16.8624996 13.9053379,18.3713723 12.9493041,19.3020167 C11.9932703,20.2326611 10.4432333,20.2326611 9.48719957,19.3020167 L3.71702533,13.6850808 C2.76099156,12.7544364 2.76099156,11.2455636 3.71702533,10.3149192 L9.48719957,4.69798331 C10.4432333,3.7673389 11.9932703,3.7673389 12.9493041,4.69798331 C13.9053379,5.62862772 13.9053379,7.13750045 12.9493041,8.06814486 L11.3648744,9.6104969 L18.6104969,9.6104969 C19.930183,9.6104969 21,10.6803139 21,12 C21,13.3196861 19.930183,14.3895031 18.6104969,14.3895031 L11.3648744,14.3895031 Z" id="Combined-Shape" fill="#1E1E1E" transform="translate(12.000000, 12.000000) rotate(-180.000000) translate(-12.000000, -12.000000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
