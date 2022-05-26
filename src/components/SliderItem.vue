@@ -74,7 +74,7 @@ export default {
     background: $twilight-blue;
     width: 375px;
     height: 368px;
-    margin-right: 15px;
+    //margin-right: 15px;
 
     .title {
       margin: 87px 24px 15px;

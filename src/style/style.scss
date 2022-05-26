@@ -194,3 +194,14 @@ $watermelon: #ea5256;
   line-height: normal;
   letter-spacing: -0.33px;
 }
+
+@mixin leftScroll{
+  opacity: 0.5;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.16px;
+}

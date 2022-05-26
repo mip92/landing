@@ -21,28 +21,37 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.left_scroll {
-  display: flex;
-  height: 250px;
+@import "src/style/style";
 
-  .left_scroll_content {
+@media screen and (min-width: 768px) {
+  .left_scroll {
     display: flex;
-    justify-content: space-around;
-    flex-direction: column-reverse;
+    height: 250px;
+    width:50px;
+    position: absolute;
+    top: 489px;
 
-    .left-scroll_arrow {
-      width: 20px;
-      height: 20px;
-      background-image: url(/public/imgs/scrollLeft.svg);
-      background-repeat: no-repeat;
-      background-position: center;
-    }
+    .left_scroll_content {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column-reverse;
 
-    .left_scroll_text {
-      width: 200px;
-      height: 200px;
-      transform: rotate(-90deg);
-      background-color: white;
+      .left-scroll_arrow {
+        width: 20px;
+        height: 20px;
+        background-image: url(/public/imgs/scrollLeft.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-left: 75px;
+      }
+
+      .left_scroll_text {
+        width: 200px;
+        height: 50px;
+        transform: rotate(-90deg);
+        background-color: white;
+        @include leftScroll();
+      }
     }
   }
 }

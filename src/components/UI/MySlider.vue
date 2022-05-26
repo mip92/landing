@@ -156,8 +156,8 @@ export default {
       position: absolute;
       border: 0;
       cursor: pointer;
-      top: 402px;
-      left: 35px
+      top: 403px;
+      left: 40px
     }
 
     .carousel__icon {
@@ -167,7 +167,7 @@ export default {
     .carousel__prev {
       background-image: url(/public/imgs/leftArrow.svg);
       top: 402px;
-      left: 35px
+      left: 40px
     }
   }
   .wrapperSlider {
