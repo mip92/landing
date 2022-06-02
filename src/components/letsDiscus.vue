@@ -71,7 +71,7 @@ export default {
   props: {},
   data() {
     return {
-      firstName: 'Klaus',
+      firstName: '',
       lastName: 'Voormann',
       email: ' klaus.voormann@email.de',
       someText: 'My business case is completely different, so I want to discuss it with you.',

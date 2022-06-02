@@ -44,7 +44,7 @@ export default {
 @media screen and (min-width: 1440px) {
   .advantage_item {
     display: grid;
-    grid-template-columns: 34px 43px 345px;
+    grid-template-columns: 34px 43px 370px;
     grid-template-rows: 34px auto 26px;
 
     .advantage_circle {

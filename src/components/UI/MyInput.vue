@@ -26,21 +26,18 @@ export default {
 .input-control {
   position: relative;
   width: 100%;
-
+  opacity: 1;
   input {
     width: 100%;
     display: block;
     height: 44px;
     object-fit: contain;
-    opacity: 0.25;
+    background-color: rgba(133, 133, 133, 0.02);
     border-radius: 72px;
-    border: solid 1px $black;
-    //input[type="text"]
-
-    //margin: 23px 0 0;
+    border: solid 1px rgba(133, 133, 133, 0.5);
     padding: 10px 22px 10px 24px;
     @include bigCarouselBody();
-    color: $black;
+    color: black;
   }
 
   span {
