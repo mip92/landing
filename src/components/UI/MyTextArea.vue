@@ -32,12 +32,9 @@ export default {
       height: 100%;
       display: block;
       object-fit: contain;
-      opacity: 0.25;
       border-radius: 22px;
-      border: solid 1px $black;
-      //input[type="text"]
-
-      //margin: 23px 0 0;
+      border: solid 1px rgba(133, 133, 133, 0.5);
+      background-color: rgba(133, 133, 133, 0.02);
       padding: 10px 22px 10px 24px;
       @include bigCarouselBody();
       color: $black;
