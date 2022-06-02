@@ -36,7 +36,7 @@ export default {
     border: solid 1px rgba(133, 133, 133, 0.5);
     padding: 10px 22px 10px 24px;
     @include bigCarouselBody();
-    color: black;
+    color: $black;
   }
 
   span {
