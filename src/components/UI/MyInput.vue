@@ -26,7 +26,6 @@ export default {
 .input-control {
   position: relative;
   width: 100%;
-  opacity: 1;
   input {
     width: 100%;
     display: block;

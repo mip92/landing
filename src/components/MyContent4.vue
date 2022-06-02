@@ -83,7 +83,7 @@ export default {
 
       .leftField {
         display: flex;
-        width: 535px;
+        width: 531px;
         height: 757px;
       }
 
